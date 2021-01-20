@@ -39,7 +39,7 @@ Install packages with
 Start server with:
 
 ```
-    npm start
+  npm start
 ```
 
 The app wil open in your default browser.
