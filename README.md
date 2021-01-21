@@ -3,7 +3,7 @@
 #### Hello there! Welcome to my React Calculator Milestone 3!
 
 #### Features
-- Create de logic for the calculator.
+- Create the logic for the calculator.
 - Add calculate and operate modules.
 
 #### Livedemo
