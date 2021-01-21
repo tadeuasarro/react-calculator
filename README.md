@@ -1,12 +1,10 @@
-# React Calculator - Milestone 1
+# React Calculator - Milestone 2
 
-#### Hello there! Welcome to my React Calculator Milestone 1!
+#### Hello there! Welcome to my React Calculator Milestone 2!
 
 #### Features
-- ReactJS app start;
-- Initialize the Github repo;
-- Add the linters.
-- Push to Heroku.
+- Create primitive components;
+- Display some info with props on the screen.
 
 #### Livedemo
 
