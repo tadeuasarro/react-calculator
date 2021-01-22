@@ -1,3 +1,5 @@
+/* eslint-disable */
+import PropTypes from 'prop-types';
 import Button from './button';
 
 const buttons = [
@@ -7,24 +9,26 @@ const buttons = [
   ['1', '2', '3', '+'],
   ['0', '.', '='],
 ];
-const handleClick = buttonName => {
-  console.log(buttonName);
-};
 const buttonsNew = [];
-const ButtonPanel = () => {
+const ButtonPanel = ({ onClick }) => {
   for (let i = 0; i < buttons.length; i += 1) {
     buttonsNew.push(
       <div key={`group + ${i}`}>
         {
           buttons[i].map(name => (
-            <Button onClick={() => handleClick(name)} key={name} name={name} />))
+            <Button onClick={() => onClick()} key={name} name={name} />))
         }
       </div>,
     );
   }
+  console.log(typeof onClick)
   return (
     buttonsNew
   );
 };
+
+ButtonPanel.propTypes = {
+  onClick: PropTypes.func.isRequired,
+}
 
 export default ButtonPanel;
