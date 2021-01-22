@@ -21,7 +21,6 @@ const ButtonPanel = ({ onClick }) => {
       </div>,
     );
   }
-  console.log(typeof onClick)
   return (
     buttonsNew
   );

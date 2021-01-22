@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types';
 
 const Button = ({ name, onClick }) => (
-  <button onClick={() => {onClick()}} type="button">
+  <button onClick={() => {onClick(name)}} type="button">
     { name }
   </button>
 );
