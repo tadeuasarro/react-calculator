@@ -7,13 +7,17 @@ const buttons = [
   ['1', '2', '3', '+'],
   ['0', '.', '='],
 ];
+const handleClick = buttonName => {
+  console.log(buttonName);
+};
 const buttonsNew = [];
 const ButtonPanel = () => {
   for (let i = 0; i < buttons.length; i += 1) {
     buttonsNew.push(
       <div key={`group + ${i}`}>
         {
-          buttons[i].map(name => <Button key={name} name={name} />)
+          buttons[i].map(name => (
+            <Button onClick={() => handleClick(name)} key={name} name={name} />))
         }
       </div>,
     );

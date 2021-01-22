@@ -24,9 +24,6 @@ class App extends React.Component {
     );
   }
 
-  handleClick(buttonName){
-    
-  }
 }
 
 export default App;
