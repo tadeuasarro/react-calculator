@@ -1,6 +1,6 @@
 import operate from './operate';
 
-const Calculate = (data, btnName = '+') => {
+const Calculate = (data = { total: null, next: null, operation: null }, btnName = '+') => {
   let { total, next, operation } = data;
 
   if (btnName === 'AC') {
@@ -17,7 +17,7 @@ const Calculate = (data, btnName = '+') => {
     operate(total, next, operation);
   } else if (btnName === '=') {
     return total;
-  } else if (btnName === '.') {
+  } else if (['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.'].includes(btnName)) {
     total += btnName;
   }
   return total;
