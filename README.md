@@ -1,6 +1,6 @@
-# React Calculator - Milestone 3
+# React Calculator - Milestone 4
 
-#### Hello there! Welcome to my React Calculator Milestone 3!
+#### Hello there! Welcome to my React Calculator Milestone 4!
 
 #### Features
 - Create the logic for the calculator.
