@@ -1,11 +1,12 @@
-/* eslint-disable */
 import PropTypes from 'prop-types';
 
-const Button = ({ name, onClick }) => (
-  <button onClick={() => {onClick(name)}} type="button">
-    { name }
-  </button>
-);
+const Button = ({ name, onClick }) => {
+  return (
+    <button onClick={() => onClick(name)} type="button">
+      { name }
+    </button>
+  );
+}
 
 Button.propTypes = {
   name: PropTypes.string.isRequired,

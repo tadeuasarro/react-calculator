@@ -1,26 +1,29 @@
 import operate from './operate';
 
-const Calculate = (data = { total: null, next: null, operation: null }, btnName = '+') => {
+const Calculate = (data, btnName = '+') => {
   let { total, next, operation } = data;
 
   if (btnName === 'AC') {
-    total = 0;
-    next = 0;
-    operation = '';
+    total = null;
+    next = null;
+    operation = null;
   } else if (btnName === '+/-') {
-    total *= 1;
-    next *= 1;
+    total *= -1;
+    next *= -1;
   } else if (btnName === '%') {
     total /= 100;
-  } else if (['÷', 'X', '+', '-'].includes(btnName)) {
+  } else if (['÷', 'x', '+', '-'].includes(btnName)) {
+    total = null
     operation = btnName;
     operate(total, next, operation);
   } else if (btnName === '=') {
     return { total, next, operation };
   } else if (['1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '.'].includes(btnName)) {
+    if (total === null) {
+      total = '';
+    }
     total += btnName;
   }
-  console.log({ total, next, operation });
   return { total, next, operation };
 };
 

@@ -4,26 +4,26 @@ import Display from './display';
 import ButtonPanel from './button_panel';
 import Calculate from '../logic/calculate';
 
-const handleClick = buttonName => {
-  console.log(buttonName);
-};
-
-class App extends React.Component {
-  constructor(props){
+class App extends React.PureComponent {
+  constructor(props) {
     super(props);
     this.state = {
       total: null,
       next: null,
       operation: null,
-    }
+    };
+    this.handleClick = this.handleClick.bind(this);
   }
 
+  handleClick = buttonName => {
+    this.setState(state => Calculate(state, buttonName))
+  }
 
-  render(){
+  render() {
     return (
       <div>
-        <Display result="0" />
-        <ButtonPanel onClick={() => handleClick()} />
+        <Display result={this.state.total} />
+        <ButtonPanel onClick={this.handleClick} />
       </div>
     );
   }
