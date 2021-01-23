@@ -1,6 +1,7 @@
 import operate from './operate';
 
-const Calculate = (data, btnName = '+') => {
+// data has mock information so the app won't crash
+const Calculate = (data = { total: null, next: null, operation: null }, btnName = '+') => {
   let { total, next, operation } = data;
 
   if (btnName === 'AC') {
@@ -8,11 +9,9 @@ const Calculate = (data, btnName = '+') => {
     next = 0;
     operation = '';
   } else if (btnName === '+/-') {
-    total *= 1;
-    next *= 1;
-  } else if (btnName === '%') {
-    total /= 100;
-  } else if (['÷', 'X', '+', '-'].includes(btnName)) {
+    total *= -1;
+    next *= -1;
+  } else if (['÷', 'X', '+', '-', '%'].includes(btnName)) {
     operation = btnName;
     operate(total, next, operation);
   } else if (btnName === '=') {
