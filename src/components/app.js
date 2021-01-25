@@ -22,7 +22,7 @@ class App extends React.PureComponent {
   render() {
     return (
       <div>
-        <Display result={this.state.total} />
+        <Display result={this.state.next ? this.state.next : this.state.total} />
         <ButtonPanel onClick={this.handleClick} />
       </div>
     );
