@@ -1,10 +1,10 @@
-# React Calculator - Milestone 4
+# React Calculator - Milestone 5
 
-#### Hello there! Welcome to my React Calculator Milestone 4!
+#### Hello there! Welcome to my React Calculator Milestone 5!
 
 #### Features
-- Create the logic for the calculator.
-- Add calculate and operate modules.
+- 100% functional calculator.
+- Styling not added so far.
 
 #### Livedemo
 
