@@ -1,10 +1,10 @@
-# React Calculator - Milestone 2
+# React Calculator - Milestone 4
 
-#### Hello there! Welcome to my React Calculator Milestone 2!
+#### Hello there! Welcome to my React Calculator Milestone 4!
 
 #### Features
-- Create primitive components;
-- Display some info with props on the screen.
+- Create the logic for the calculator.
+- Add calculate and operate modules.
 
 #### Livedemo
 
