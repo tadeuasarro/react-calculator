@@ -1,24 +1,32 @@
 import Big from 'big.js';
 
-// first and second have mock integers values, so bigjs won't crash
-const operate = (first, second, operation) => {
-  const firstNumber = (first === null ? Big(0) : Big(first));
-  const secondNumber = (second === null ? Big(0) : Big(second));
+const Operate = (numberOne, numberTwo, operation) => {
+  const valueOne = Big(numberOne);
+  const valueTwo = Big(numberTwo);
+  let total = 0;
 
-  let result;
-  if (operation === '÷') {
-    result = firstNumber / secondNumber;
-  } else if (operation === 'x') {
-    result = firstNumber * secondNumber;
-  } else if (operation === '+') {
-    result = parseInt(firstNumber, 10) + parseInt(secondNumber, 10);
-  } else if (operation === '-') {
-    result = parseInt(firstNumber, 10) - parseInt(secondNumber, 10);
-  } else {
-    result /= 100;
+  switch (operation) {
+    case '+':
+      total = valueOne.plus(valueTwo);
+      break;
+    case '-':
+      total = valueOne.minus(valueTwo);
+      break;
+    case 'x':
+      total = valueOne.times(valueTwo);
+      break;
+    case '÷':
+      if (numberTwo === '0') {
+        total = "Can't divide by zero";
+      } else {
+        total = valueOne.div(valueTwo);
+      }
+      break;
+
+    default:
+      break;
   }
-
-  return result.toString();
+  return total;
 };
 
-export default operate;
+export default Operate;
