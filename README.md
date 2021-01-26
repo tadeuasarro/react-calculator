@@ -8,7 +8,7 @@
 
 #### Livedemo
 
-- [Heroku](https://tadeu-react-calculator.herokuapp.com/)
+- [Heroku](https://tadeuasarro-react.herokuapp.com/)
 
 ## Built With
 
