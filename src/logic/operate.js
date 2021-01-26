@@ -1,6 +1,10 @@
 import Big from 'big.js';
 
 const Operate = (numberOne, numberTwo, operation) => {
+  if (!(typeof numberOne === 'number') || !(typeof numberTwo === 'number')) {
+    return 0;
+  }
+
   const valueOne = Big(numberOne);
   const valueTwo = Big(numberTwo);
   let total = 0;
