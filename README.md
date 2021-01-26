@@ -1,14 +1,14 @@
-# React Calculator - Milestone 5
+# React Calculator - Hooks refactor
 
-#### Hello there! Welcome to my React Calculator Milestone 5!
+#### Hello there! Welcome to my React Calculator hooks refactor!
 
 #### Features
-- 100% functional calculator.
-- Styling not added so far.
+- There are no more Stateful components in the application.
+- Everything is accomplished by using Funcional components and ReactJS hooks.
 
 #### Livedemo
 
-- [Heroku](https://tadeu-react-calculator.herokuapp.com/)
+- [Heroku](https://tadeuasarro-react.herokuapp.com/)
 
 ## Built With
 
