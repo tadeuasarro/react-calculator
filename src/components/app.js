@@ -12,7 +12,7 @@ const App = () => {
   }
 
   return (
-    <div>
+    <div id="container">
       <Display result={state.next ? state.next : state.total} />
       <ButtonPanel onClick={handleClick} />
     </div>
