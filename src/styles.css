@@ -14,7 +14,7 @@
 }
 
 #root {
-  border: black solid 1px;
+  border: black solid 2px;
 }
 
 #container {
@@ -31,4 +31,36 @@
   justify-content: flex-end;
   font-size: xx-large;
   padding: 20px;
+}
+
+.row {
+  display: flex;
+  border-top: black solid 2px;
+}
+
+.button-shape,
+.button-zero {
+  padding: 20px;
+  font-size: x-large;
+}
+
+button {
+  border: none;
+}
+
+.button-shape {
+ width: 25%;
+}
+
+.button-zero {
+  width: 50%;
+}
+
+.button-gray {
+  background-color: lightgray;
+  border-right: black solid 2px;
+}
+
+.button-orange {
+  background-color: orange;
 }
