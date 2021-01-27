@@ -3,17 +3,17 @@ import { render, screen } from '@testing-library/react';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import '@testing-library/jest-dom';
-import Home from '../home';
+import Navbar from '../navbar';
 
-describe("Display", () => {
+describe("Quote", () => {
   it('renders correctly', () => {
-    const tree = renderer.create(<BrowserRouter><Home /></BrowserRouter>).toJSON();
+    const tree = renderer.create(<BrowserRouter><Navbar /></BrowserRouter>).toJSON();
     expect(tree).toMatchSnapshot();
   });
 
-  it('creates a Home component', () => {
-    render(<BrowserRouter><Home /></BrowserRouter>);
-    const element = screen.getByText('Welcome to Math-magicians!!!');
+  it('creates a Quote component', () => {
+    render(<BrowserRouter><Navbar /></BrowserRouter>);
+    const element = screen.getByText('Math-magicians');
     expect(element).toBeInTheDocument();
   });
 

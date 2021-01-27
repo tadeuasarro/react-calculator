@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display renders correctly 1`] = `
+<div
+  id="display"
+>
+  0
+</div>
+`;
+
+exports[`Dispplay renders correctly 1`] = `
+<div
+  id="display"
+>
+  0
+</div>
+`;
