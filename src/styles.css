@@ -5,20 +5,13 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-}
-
-#root {
-  border: black solid 2px;
+#author {
+  margin-top: 20px;
 }
 
 #container {
   width: 700px;
+  border: black solid 2px;
 }
 
 #display {
@@ -31,6 +24,53 @@
   justify-content: flex-end;
   font-size: xx-large;
   padding: 20px;
+}
+
+#home {
+  justify-content: space-evenly;
+}
+
+#home,
+#quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  height: 60%;
+  line-height: 2.0;
+}
+
+#navbar {
+  background-color: slategrey;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 10vh;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+#navbar ul li {
+  list-style: none;
+  display: inline;
+  margin-left: 10px;
+}
+
+#outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100vw;
+}
+
+#quote {
+  justify-content: center;
 }
 
 .row {
