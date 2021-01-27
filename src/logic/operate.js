@@ -1,7 +1,7 @@
 import Big from 'big.js';
 
 const Operate = (numberOne, numberTwo, operation) => {
-  if (!(typeof numberOne === 'number') || !(typeof numberTwo === 'number')) {
+  if (!(typeof numberOne === 'string') || !(typeof numberTwo === 'string')) {
     return 0;
   }
 
