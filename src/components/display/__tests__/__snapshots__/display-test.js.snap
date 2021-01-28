@@ -7,11 +7,3 @@ exports[`Display renders correctly 1`] = `
   0
 </div>
 `;
-
-exports[`Dispplay renders correctly 1`] = `
-<div
-  id="display"
->
-  0
-</div>
-`;
