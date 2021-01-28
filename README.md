@@ -1,10 +1,9 @@
-# React Calculator - Hooks refactor
+# React Calculator - Testing
 
-#### Hello there! Welcome to my React Calculator hooks refactor!
+#### Hello there! Welcome to my React Calculator! In this milestone we've just added testing to all of our components.
 
 #### Features
-- There are no more Stateful components in the application.
-- Everything is accomplished by using Funcional components and ReactJS hooks.
+- Add test units using Jest.
 
 #### Livedemo
 
