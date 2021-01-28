@@ -5,7 +5,7 @@ import renderer from 'react-test-renderer';
 import '@testing-library/jest-dom';
 import Quote from '../quote';
 
-describe("Quote", () => {
+describe('Quote', () => {
   it('renders correctly', () => {
     const tree = renderer.create(<BrowserRouter><Quote /></BrowserRouter>).toJSON();
     expect(tree).toMatchSnapshot();
@@ -16,5 +16,4 @@ describe("Quote", () => {
     const element = screen.getByText('BALBOA, Rocky');
     expect(element).toBeInTheDocument();
   });
-
 });

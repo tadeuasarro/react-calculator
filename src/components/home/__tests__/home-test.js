@@ -5,7 +5,7 @@ import renderer from 'react-test-renderer';
 import '@testing-library/jest-dom';
 import Home from '../home';
 
-describe("Display", () => {
+describe('Display', () => {
   it('renders correctly', () => {
     const tree = renderer.create(<BrowserRouter><Home /></BrowserRouter>).toJSON();
     expect(tree).toMatchSnapshot();
@@ -16,5 +16,4 @@ describe("Display", () => {
     const element = screen.getByText('Welcome to Math-magicians!!!');
     expect(element).toBeInTheDocument();
   });
-
 });

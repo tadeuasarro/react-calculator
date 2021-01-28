@@ -5,7 +5,7 @@ import renderer from 'react-test-renderer';
 import '@testing-library/jest-dom';
 import Navbar from '../navbar';
 
-describe("Quote", () => {
+describe('Quote', () => {
   it('renders correctly', () => {
     const tree = renderer.create(<BrowserRouter><Navbar /></BrowserRouter>).toJSON();
     expect(tree).toMatchSnapshot();
@@ -16,5 +16,4 @@ describe("Quote", () => {
     const element = screen.getByText('Math-magicians');
     expect(element).toBeInTheDocument();
   });
-
 });

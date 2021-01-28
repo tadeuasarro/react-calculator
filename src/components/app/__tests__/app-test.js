@@ -5,7 +5,7 @@ import renderer from 'react-test-renderer';
 import '@testing-library/jest-dom';
 import App from '../app';
 
-describe("Display", () => {
+describe('Display', () => {
   it('renders correctly', () => {
     const tree = renderer.create(<BrowserRouter><App /></BrowserRouter>).toJSON();
     expect(tree).toMatchSnapshot();
@@ -16,5 +16,4 @@ describe("Display", () => {
     const element = screen.getByText('0');
     expect(element).toBeInTheDocument();
   });
-
 });

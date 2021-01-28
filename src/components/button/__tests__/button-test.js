@@ -4,11 +4,9 @@ import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import Button from '../button';
 
-const handleClick = buttonName => {
-  setState(state => Calculate(state, buttonName));
-}
+const handleClick = () => ({ total: '0', next: '0', operation: '' });
 
-describe("Button", () => {
+describe('Button', () => {
   it('renders correctly', () => {
     const tree = renderer.create(<Button name="0" onClick={handleClick} />).toJSON();
     expect(tree).toMatchSnapshot();
@@ -17,6 +15,6 @@ describe("Button", () => {
   it('creates a Button component', () => {
     render(<Button name="0" onClick={handleClick} />);
     const element = screen.getByText('0');
-    expect(element).toBeInTheDocument()
+    expect(element).toBeInTheDocument();
   });
 });
