@@ -1,0 +1,206 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Display renders correctly 1`] = `
+<main>
+  <div
+    id="navbar"
+  >
+    <h1>
+      Math-magicians
+    </h1>
+    <ul>
+      <li>
+        <a
+          href="/"
+          onClick={[Function]}
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="/app"
+          onClick={[Function]}
+        >
+          App
+        </a>
+      </li>
+      <li>
+        <a
+          href="/quote"
+          onClick={[Function]}
+        >
+          Quote
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div
+    id="outer-container"
+  >
+    <div
+      id="container"
+    >
+      <div
+        id="display"
+      />
+      <div>
+        <div
+          className="row"
+          id="operations"
+        >
+          <button
+            className="button-gray button-shape"
+            onClick={[Function]}
+            type="button"
+          >
+            AC
+          </button>
+          <button
+            className="button-gray button-shape"
+            onClick={[Function]}
+            type="button"
+          >
+            +/-
+          </button>
+          <button
+            className="button-gray button-shape"
+            onClick={[Function]}
+            type="button"
+          >
+            %
+          </button>
+          <button
+            className="button-orange button-shape"
+            onClick={[Function]}
+            type="button"
+          >
+            ÷
+          </button>
+        </div>
+        <div
+          className="row"
+        >
+          <button
+            className="button-gray button-shape"
+            onClick={[Function]}
+            type="button"
+          >
+            7
+          </button>
+          <button
+            className="button-gray button-shape"
+            onClick={[Function]}
+            type="button"
+          >
+            8
+          </button>
+          <button
+            className="button-gray button-shape"
+            onClick={[Function]}
+            type="button"
+          >
+            9
+          </button>
+          <button
+            className="button-orange button-shape"
+            onClick={[Function]}
+            type="button"
+          >
+            x
+          </button>
+        </div>
+        <div
+          className="row"
+        >
+          <button
+            className="button-gray button-shape"
+            onClick={[Function]}
+            type="button"
+          >
+            4
+          </button>
+          <button
+            className="button-gray button-shape"
+            onClick={[Function]}
+            type="button"
+          >
+            5
+          </button>
+          <button
+            className="button-gray button-shape"
+            onClick={[Function]}
+            type="button"
+          >
+            6
+          </button>
+          <button
+            className="button-orange button-shape"
+            onClick={[Function]}
+            type="button"
+          >
+            -
+          </button>
+        </div>
+        <div
+          className="row"
+        >
+          <button
+            className="button-gray button-shape"
+            onClick={[Function]}
+            type="button"
+          >
+            1
+          </button>
+          <button
+            className="button-gray button-shape"
+            onClick={[Function]}
+            type="button"
+          >
+            2
+          </button>
+          <button
+            className="button-gray button-shape"
+            onClick={[Function]}
+            type="button"
+          >
+            3
+          </button>
+          <button
+            className="button-orange button-shape"
+            onClick={[Function]}
+            type="button"
+          >
+            +
+          </button>
+        </div>
+        <div
+          className="row"
+        >
+          <button
+            className="button-gray button-zero"
+            onClick={[Function]}
+            type="button"
+          >
+            0
+          </button>
+          <button
+            className="button-gray button-shape"
+            onClick={[Function]}
+            type="button"
+          >
+            .
+          </button>
+          <button
+            className="button-orange button-shape"
+            onClick={[Function]}
+            type="button"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+`;

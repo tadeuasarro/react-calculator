@@ -1,9 +1,9 @@
 /* eslint-disable */
 import React, { useState } from 'react';
-import Display from './display';
-import ButtonPanel from './button_panel';
-import Calculate from '../logic/calculate';
-import Navbar from './navbar';
+import Display from '../display/display';
+import ButtonPanel from '../button/button_panel';
+import Calculate from '../../logic/calculate';
+import Navbar from '../navbar/navbar';
 
 const App = () => {
   const [state, setState] = useState({ total: null, next: null, operation: null });
